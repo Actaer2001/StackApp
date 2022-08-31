@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons\infoIcon.png" />
+    <None Remove="icons\loadIcon.png" />
+    <None Remove="icons\questionIcon.png" />
+    <None Remove="icons\saveIcon.png" />
+    <None Remove="icons\stack-overflow.png" />
+    <None Remove="Resources\Stack_Documentation.pdf" />
+    <None Remove="Resources\Stek_dokumentacija.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons\infoIcon.png" />
+    <Resource Include="icons\loadIcon.png" />
+    <Resource Include="icons\questionIcon.png" />
+    <Resource Include="icons\saveIcon.png" />
+    <Resource Include="icons\stack-overflow.png" />
+    <Resource Include="Resources\Stack_Documentation.pdf" />
+    <Resource Include="Resources\Stek_dokumentacija.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+  </ItemGroup>
+
+</Project>
