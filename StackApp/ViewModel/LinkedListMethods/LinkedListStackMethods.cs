@@ -67,7 +67,7 @@ namespace StackApp.ViewModel.LinkedListMethods
             if (list.Count > 1)
             {
                 stackVM.CurrentWindow.mainCanvas.Children.Remove(stackVM.CurrentWindow.mainCanvas.Children.OfType<Line>().ToList().Last());
-                var list2 = stackVM.CurrentWindow.mainCanvas.Children.OfType<StackPanel>().ToList();
+                var list2 = stackVM.CurrentWindow.mainCanvas.Children.OfType<Line>().ToList();
                 if (list2.Count > 0)
                     stackVM.CurrentWindow.mainCanvas.Children.Remove(list2.Last());
             }
