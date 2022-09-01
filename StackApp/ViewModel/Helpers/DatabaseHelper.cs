@@ -9,7 +9,7 @@ namespace StackApp.ViewModel.Helpers
 {
     public class DatabaseHelper
     {
-        private static string dbFile = System.IO.Path.Combine(Environment.CurrentDirectory, "Stacks.db");
+        private static string dbFile = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Stacks.db");
 
         public static bool Insert<T>(T item)
         {
