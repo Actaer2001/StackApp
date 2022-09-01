@@ -82,7 +82,7 @@ namespace StackApp.ViewModel.ArrayMethods
             await Task.Delay(TimeSpan.FromSeconds(1));
             stackVM.TopPointer -= 1;
             await Task.Delay(TimeSpan.FromSeconds(1));
-            stackVM.StackNodes.RemoveAt(stackVM.TopPointer);
+            stackVM.StackNodes.RemoveAt(stackVM.TopPointer + 1);
             stackVM.CurrentWindow.mainCanvas.Children.Remove(ellipse);
             var ellipse2 = new Ellipse()
             {
